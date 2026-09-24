@@ -27,11 +27,9 @@ class Train:
         self.train_number = train_number
         self.train_name = train_name
 
-        # Dictionary:
-        # seat number -> current status
+        
         self.seats = {}
 
-        # Create 5 seats for each travel class
         for travel_class in [
             "Sleeper",
             "AC 3-Tier",
@@ -110,16 +108,12 @@ class ReservationSystem:
             "Chennai Express"
         )
 
-        # Confirmed tickets
         self.tickets = {}
 
-        # Cancelled tickets
         self.cancelled_tickets = {}
 
-        # Waiting list
         self.waiting_list = []
 
-        # Data file
         self.filename = "railway_data.json"
 
         self.load_data()
@@ -207,7 +201,6 @@ class ReservationSystem:
 
             return
 
-        # Prevent duplicate active booking
         for ticket in self.tickets.values():
 
             if (
@@ -222,7 +215,6 @@ class ReservationSystem:
 
                 return
 
-        # Age
         try:
 
             age = int(
@@ -241,7 +233,6 @@ class ReservationSystem:
 
             return
 
-        # Phone
         phone = input(
             "Enter phone number: "
         ).strip()
@@ -252,7 +243,6 @@ class ReservationSystem:
 
             return
 
-        # Passenger type
         print("\nPassenger Type")
 
         print("1. Adult")
@@ -279,7 +269,6 @@ class ReservationSystem:
             type_choice
         ]
 
-        # Travel class
         print("\nTravel Classes")
 
         print("1. Sleeper")
@@ -315,7 +304,6 @@ class ReservationSystem:
             passenger_type
         )
 
-        # Find seat
         seat = self.find_available_seat(
             travel_class
         )
@@ -481,7 +469,6 @@ class ReservationSystem:
             - cancellation_charge
         )
 
-        # Free the seat
         self.train.seats[
             ticket.seat_number
         ] = "Available"
