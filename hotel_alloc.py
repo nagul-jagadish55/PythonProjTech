@@ -129,7 +129,6 @@ class Hotel:
 
     def create_rooms(self):
 
-        # Single rooms
         for number in range(101, 106):
 
             self.rooms.append(
@@ -140,7 +139,6 @@ class Hotel:
                 )
             )
 
-        # Double rooms
         for number in range(201, 206):
 
             self.rooms.append(
@@ -151,7 +149,6 @@ class Hotel:
                 )
             )
 
-        # Deluxe rooms
         for number in range(301, 306):
 
             self.rooms.append(
@@ -162,7 +159,6 @@ class Hotel:
                 )
             )
 
-        # Suite rooms
         for number in range(401, 406):
 
             self.rooms.append(
@@ -285,7 +281,6 @@ class Hotel:
 
             return
 
-        # Check if customer already exists
         customer = None
 
         for existing_customer in self.customers:
@@ -296,7 +291,6 @@ class Hotel:
 
                 break
 
-        # If customer does not exist
         if customer is None:
 
             print("\nCustomer not found.")
@@ -386,7 +380,6 @@ class Hotel:
 
             return
 
-        # Find room
         room = self.find_available_room(
             room_type
         )
@@ -418,7 +411,6 @@ class Hotel:
             days
         )
 
-        # Mark room as reserved
         room.status = "Reserved"
 
         self.reservations[
@@ -470,7 +462,6 @@ class Hotel:
             * reservation.days
         )
 
-        # Weekend charge
         weekend_charge = 0
 
         if reservation.days >= 2:
@@ -479,7 +470,6 @@ class Hotel:
                 base_amount * 0.10
             )
 
-        # Long stay discount
         discount = 0
 
         if reservation.days > 5:
@@ -539,7 +529,6 @@ class Hotel:
             )
         )
 
-        # Update room status
         for room in self.rooms:
 
             if (
@@ -616,7 +605,6 @@ class Hotel:
             reservation
         )
 
-        # Late checkout option
         late_choice = input(
             "Was the checkout late? (y/n): "
         ).lower()
@@ -629,7 +617,6 @@ class Hotel:
 
             total += late_charge
 
-        # Free room
         for room in self.rooms:
 
             if (
@@ -641,7 +628,6 @@ class Hotel:
 
                 break
 
-        # Add to booking history
         self.booking_history.append(
             reservation.to_dict()
         )
@@ -732,7 +718,6 @@ class Hotel:
             reservation
         )
 
-        # Cancellation charge
         cancellation_charge = (
             total * 0.10
         )
@@ -742,7 +727,6 @@ class Hotel:
             - cancellation_charge
         )
 
-        # Free room
         for room in self.rooms:
 
             if (
@@ -976,7 +960,6 @@ class Hotel:
 
                 data = json.load(file)
 
-            # Load customers
             self.customers = []
 
             for customer_data in data.get(
@@ -997,7 +980,6 @@ class Hotel:
                     customer
                 )
 
-            # Load room status
             saved_rooms = data.get(
                 "rooms",
                 []
