@@ -1,0 +1,188 @@
+{
+    "customers": [
+        {
+            "name": "ram",
+            "age": 21,
+            "phone": "3444223455"
+        },
+        {
+            "name": "edgar",
+            "age": 32,
+            "phone": "3456643322"
+        }
+    ],
+    "rooms": [
+        {
+            "room_number": 101,
+            "room_type": "Single",
+            "price": 1500,
+            "status": "Available"
+        },
+        {
+            "room_number": 102,
+            "room_type": "Single",
+            "price": 1500,
+            "status": "Available"
+        },
+        {
+            "room_number": 103,
+            "room_type": "Single",
+            "price": 1500,
+            "status": "Available"
+        },
+        {
+            "room_number": 104,
+            "room_type": "Single",
+            "price": 1500,
+            "status": "Available"
+        },
+        {
+            "room_number": 105,
+            "room_type": "Single",
+            "price": 1500,
+            "status": "Available"
+        },
+        {
+            "room_number": 201,
+            "room_type": "Double",
+            "price": 2500,
+            "status": "Available"
+        },
+        {
+            "room_number": 202,
+            "room_type": "Double",
+            "price": 2500,
+            "status": "Available"
+        },
+        {
+            "room_number": 203,
+            "room_type": "Double",
+            "price": 2500,
+            "status": "Available"
+        },
+        {
+            "room_number": 204,
+            "room_type": "Double",
+            "price": 2500,
+            "status": "Available"
+        },
+        {
+            "room_number": 205,
+            "room_type": "Double",
+            "price": 2500,
+            "status": "Available"
+        },
+        {
+            "room_number": 301,
+            "room_type": "Deluxe",
+            "price": 4000,
+            "status": "Available"
+        },
+        {
+            "room_number": 302,
+            "room_type": "Deluxe",
+            "price": 4000,
+            "status": "Available"
+        },
+        {
+            "room_number": 303,
+            "room_type": "Deluxe",
+            "price": 4000,
+            "status": "Available"
+        },
+        {
+            "room_number": 304,
+            "room_type": "Deluxe",
+            "price": 4000,
+            "status": "Available"
+        },
+        {
+            "room_number": 305,
+            "room_type": "Deluxe",
+            "price": 4000,
+            "status": "Available"
+        },
+        {
+            "room_number": 401,
+            "room_type": "Suite",
+            "price": 6000,
+            "status": "Available"
+        },
+        {
+            "room_number": 402,
+            "room_type": "Suite",
+            "price": 6000,
+            "status": "Available"
+        },
+        {
+            "room_number": 403,
+            "room_type": "Suite",
+            "price": 6000,
+            "status": "Available"
+        },
+        {
+            "room_number": 404,
+            "room_type": "Suite",
+            "price": 6000,
+            "status": "Available"
+        },
+        {
+            "room_number": 405,
+            "room_type": "Suite",
+            "price": 6000,
+            "status": "Available"
+        }
+    ],
+    "reservations": {
+        "HTL976486": {
+            "booking_id": "HTL976486",
+            "customer": {
+                "name": "edgar",
+                "age": 32,
+                "phone": "3456643322"
+            },
+            "room_number": 301,
+            "room_type": "Deluxe",
+            "price": 4000,
+            "days": 4,
+            "status": "Checked-Out",
+            "reservation_time": "2026-09-24 23:30:27",
+            "check_in_time": "2026-09-24 23:30:50",
+            "check_out_time": "2026-09-24 23:31:00"
+        }
+    },
+    "booking_history": [
+        {
+            "booking_id": "HTL594997",
+            "customer": {
+                "name": "ram",
+                "age": 21,
+                "phone": "3444223455"
+            },
+            "room_number": 201,
+            "room_type": "Double",
+            "price": 2500,
+            "days": 3,
+            "status": "Cancelled",
+            "reservation_time": "2026-09-24 23:29:17",
+            "check_in_time": null,
+            "check_out_time": null
+        },
+        {
+            "booking_id": "HTL976486",
+            "customer": {
+                "name": "edgar",
+                "age": 32,
+                "phone": "3456643322"
+            },
+            "room_number": 301,
+            "room_type": "Deluxe",
+            "price": 4000,
+            "days": 4,
+            "status": "Checked-Out",
+            "reservation_time": "2026-09-24 23:30:27",
+            "check_in_time": "2026-09-24 23:30:50",
+            "check_out_time": "2026-09-24 23:31:00"
+        }
+    ]
+}
