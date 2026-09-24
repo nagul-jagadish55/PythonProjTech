@@ -184,7 +184,6 @@ class NumberGuessingGame:
 
                     break
 
-                # Incorrect answer
                 score -= 10
 
                 difference = abs(secret_number - guess)
@@ -201,7 +200,6 @@ class NumberGuessingGame:
                 print("10 points deducted.")
                 print("Current score:", score)
 
-            # Player failed
             if not won:
                 score = 0
                 print("\nNo attempts remaining.")
