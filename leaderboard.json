@@ -1,0 +1,20 @@
+{
+    "han": {
+        "score": 0,
+        "games_played": 1,
+        "games_won": 0,
+        "best_score": 0
+    },
+    "ram": {
+        "score": 80,
+        "games_played": 1,
+        "games_won": 1,
+        "best_score": 80
+    },
+    "frey": {
+        "score": 0,
+        "games_played": 1,
+        "games_won": 0,
+        "best_score": 0
+    }
+}

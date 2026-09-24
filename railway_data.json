@@ -1,0 +1,89 @@
+{
+    "tickets": {
+        "7114906149": {
+            "pnr": "7114906149",
+            "passenger": {
+                "name": "Tim",
+                "age": 33,
+                "phone": "374563898929",
+                "passenger_type": "Adult"
+            },
+            "train_number": "12601",
+            "travel_class": "AC 2-Tier",
+            "seat_number": "AC 2-Tier-1",
+            "fare": 1500,
+            "booking_time": "2026-09-24 23:11:26",
+            "status": "Confirmed"
+        },
+        "7083915830": {
+            "pnr": "7083915830",
+            "passenger": {
+                "name": "henry",
+                "age": 11,
+                "phone": "2344212345",
+                "passenger_type": "Child"
+            },
+            "train_number": "12601",
+            "travel_class": "Sleeper",
+            "seat_number": "Sleeper-1",
+            "fare": 250.0,
+            "booking_time": "2026-09-24 23:11:44",
+            "status": "Confirmed"
+        },
+        "6961600343": {
+            "pnr": "6961600343",
+            "passenger": {
+                "name": "harry",
+                "age": 67,
+                "phone": "22626252782",
+                "passenger_type": "Senior"
+            },
+            "train_number": "12601",
+            "travel_class": "AC 3-Tier",
+            "seat_number": "AC 3-Tier-1",
+            "fare": 700.0,
+            "booking_time": "2026-09-24 23:12:04",
+            "status": "Confirmed"
+        }
+    },
+    "cancelled_tickets": {
+        "3371588577": {
+            "pnr": "3371588577",
+            "passenger": {
+                "name": "Ram",
+                "age": 21,
+                "phone": "4536372897",
+                "passenger_type": "Adult"
+            },
+            "train_number": "12601",
+            "travel_class": "First Class",
+            "seat_number": "First Class-1",
+            "fare": 2000,
+            "booking_time": "2026-09-24 23:10:10",
+            "status": "Cancelled"
+        }
+    },
+    "waiting_list": [],
+    "seats": {
+        "Sleeper-1": "7083915830",
+        "Sleeper-2": "Available",
+        "Sleeper-3": "Available",
+        "Sleeper-4": "Available",
+        "Sleeper-5": "Available",
+        "AC 3-Tier-1": "6961600343",
+        "AC 3-Tier-2": "Available",
+        "AC 3-Tier-3": "Available",
+        "AC 3-Tier-4": "Available",
+        "AC 3-Tier-5": "Available",
+        "AC 2-Tier-1": "7114906149",
+        "AC 2-Tier-2": "Available",
+        "AC 2-Tier-3": "Available",
+        "AC 2-Tier-4": "Available",
+        "AC 2-Tier-5": "Available",
+        "First Class-1": "Available",
+        "First Class-2": "Available",
+        "First Class-3": "Available",
+        "First Class-4": "Available",
+        "First Class-5": "Available"
+    }
+}
